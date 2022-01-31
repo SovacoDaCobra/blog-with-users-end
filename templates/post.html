@@ -39,8 +39,8 @@
 
                 <!--           Comments Area -->
 
-                {{ ckeditor|load() }}
-                {{ ckeditor|config(name='comment_text') }}
+                {{ ckeditor.load() }}
+                {{ ckeditor.config(name='comment_text') }}
                 {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
 
 
